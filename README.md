@@ -1,6 +1,6 @@
 # Análise Automação Web
 
-Projeto base: "# desafio-analise-automacao"
+Projeto base: # desafio-analise-automacao
 
 Aprimorando habilidades e expertise em BDD, Gherkin e evoluindo automações e cenários.
 
