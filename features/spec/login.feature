@@ -18,13 +18,13 @@ Funcionalidade: Login no Ecommerce Fake
   # Completar o cenário abaixo
   @login_sem_sucesso
   Esquema do Cenário: Login com falha
-    Quando fizer login com <email> e <senha>
+    Quando fizer login com "<email>" e <senha>
     Então não deverá ser autenticado
-    E deverá exibir a mensagem de alerta <texto>
+    E deverá exibir a mensagem de alerta "<texto>"
 
     Exemplos:
-    | email                 | senha             | texto                          |
-    | "404@gmail.com"       | "abc123"          | "Authentication failed."       |
-    | "rafael@coelho.com"   | "pwd123"          | "Authentication failed."       |
-    | ""                    | "abc123"          | "An email address required."   |
-    | "rafael@coelho.com"   | ""                | "Password is required."        |
+    | email                 | senha    | texto                      |
+    | 404@gmail.com         | 'abc123' | Authentication failed.     |
+    | rafael@coelho.com     | 'pwd123' | Authentication failed.     |
+    |                       | 'abc123' | An email address required. |
+    | rafael@coelho.com     |   ''     | Password is required.      |
