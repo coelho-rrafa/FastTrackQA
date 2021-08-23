@@ -10,6 +10,5 @@ module Pages
     element  :link_forgot_password, 'a[title="Recover your forgotten password"]'
     element  :btn_sign_in, '#SubmitLogin'
     element  :alert_message_authentication_failed, '.alert-danger'
-    
   end
 end
