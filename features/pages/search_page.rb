@@ -1,4 +1,4 @@
-require_relative 'sections/product.rb'
+require_relative 'sections/product'
 
 module Pages
   class SearchPage < SitePrism::Page
