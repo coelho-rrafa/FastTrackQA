@@ -13,3 +13,12 @@ Funcionalidade: Adicionar item ao carrinho no Fake Ecommerce
         Quando selecionar o primeiro item disponível
         E adicionar ao meu carrinho
         Então deverá ser exibido o item adicionado com sucesso
+
+
+    @remover_item
+    Cenário: Remover produto do carrinho
+      Quando selecionar o primeiro item disponível
+      E adicionar ao meu carrinho
+      E seguir para página "Order - My Store"
+      E remover o produto
+      Então deverá exibir a mensagem "Your shopping cart is empty."

@@ -5,6 +5,7 @@ Before do
   @account_page = Pages::AccountPage.new
   @product_page = Pages::ProductPage.new
   @register_page = Pages::RegisterPage.new
+  @order_page = Pages::OrderPage.new
 end
 
 AfterStep do
