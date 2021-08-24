@@ -13,7 +13,7 @@ module Pages
 
     def search(query)
       header.input_search_form.set(query)
-      header.button_search.click
+      header.btn_search.click
     end
   end
 end
