@@ -9,5 +9,7 @@ module Sections
     element  :btn_section_women, 'a[title=Women'
     element  :btn_section_dresses, 'a[title=Dresses'
     element  :btn_section_tshirts, 'a[title=T-shirts'
+    element  :btn_go_to_account, '.account'
+    element  :btn_logout, '.logout'
   end
 end

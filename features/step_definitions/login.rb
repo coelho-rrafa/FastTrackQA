@@ -13,7 +13,7 @@ Então("deverá ser redirecionado para área logada") do
 end
 
 Então("deverá ser exibido o nome {string}") do |user_name|
-  expect(@account_page.customer_account).to have_content user_name
+  expect(@account_page.header.btn_go_to_account).to have_content user_name
 end
 
 Então("não deverá ser autenticado") do

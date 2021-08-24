@@ -3,7 +3,7 @@ Dado("que esteja na página do login") do
 end
 
 Quando("digitar um email válido") do
-  @login_page.input_create_account_email.set 'terestetestess@teste.com'
+  @login_page.input_create_account_email.set 'tersss@teste.com'
   @login_page.btn_create_an_account.click
 end
   
@@ -20,5 +20,5 @@ end
 Então("deverá ser cadastrado com sucesso") do
   @register_page.create_account.btn_register.click
   expect(page.title).to have_content 'My account - My Store'
-  expect(@account_page.customer_account).to have_content 'teste teste'
+  expect(@account_page.header.btn_go_to_account).to have_content 'teste teste'
 end

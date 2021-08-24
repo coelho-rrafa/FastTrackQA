@@ -8,14 +8,14 @@ Quando("adicionar ao meu carrinho") do
 end
 
 Então("deverá ser exibido o item adicionado com sucesso") do
-  @product_page.btn_my_cart.hover
+  @product_page.header.btn_shopping_cart.hover
   item = @product_page.cart_item.visible?
   expect(item).to be true
 end
 
 
 Quando("seguir para página {string}") do |expected_page|
-  @product_page.btn_my_cart.click
+  @product_page.header.btn_shopping_cart.click
   expect(page.title).to eql expected_page
 end
 
